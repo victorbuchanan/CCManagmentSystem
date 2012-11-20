@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Userid:</b>
+  <%= @billing_info.userid %>
+</p>
+
+<p>
+  <b>Cardtype:</b>
+  <%= @billing_info.cardtype %>
+</p>
+
+<p>
+  <b>Ccnumber:</b>
+  <%= @billing_info.ccnumber %>
+</p>
+
+<p>
+  <b>Ccexpdate:</b>
+  <%= @billing_info.ccexpdate %>
+</p>
+
+
+<%= link_to 'Edit', edit_billing_info_path(@billing_info) %> |
+<%= link_to 'Back', billing_infos_path %>

@@ -1,0 +1,33 @@
+<%= form_for(@billing_info) do |f| %>
+  <% if @billing_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@billing_info.errors.count, "error") %> prohibited this billing_info from being saved:</h2>
+
+      <ul>
+      <% @billing_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :userid %><br />
+    <%= f.number_field :userid %>
+  </div>
+  <div class="field">
+    <%= f.label :cardtype %><br />
+    <%= f.text_field :cardtype %>
+  </div>
+  <div class="field">
+    <%= f.label :ccnumber %><br />
+    <%= f.text_field :ccnumber %>
+  </div>
+  <div class="field">
+    <%= f.label :ccexpdate %><br />
+    <%= f.text_field :ccexpdate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

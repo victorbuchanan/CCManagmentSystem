@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  userid: 1
+  transactionDate: MyString
+  billAmount: 1.5
+  paid: false
+  adminId: 1
+
+two:
+  userid: 1
+  transactionDate: MyString
+  billAmount: 1.5
+  paid: false
+  adminId: 1

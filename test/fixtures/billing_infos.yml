@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  userid: 1
+  cardtype: MyString
+  ccnumber: MyString
+  ccexpdate: MyString
+
+two:
+  userid: 1
+  cardtype: MyString
+  ccnumber: MyString
+  ccexpdate: MyString

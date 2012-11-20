@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Userid:</b>
+  <%= @user_log.userid %>
+</p>
+
+<p>
+  <b>Transactiondate:</b>
+  <%= @user_log.transactionDate %>
+</p>
+
+<p>
+  <b>Billamount:</b>
+  <%= @user_log.billAmount %>
+</p>
+
+<p>
+  <b>Paid:</b>
+  <%= @user_log.paid %>
+</p>
+
+<p>
+  <b>Adminid:</b>
+  <%= @user_log.adminId %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_log_path(@user_log) %> |
+<%= link_to 'Back', user_logs_path %>

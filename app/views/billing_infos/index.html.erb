@@ -1,0 +1,29 @@
+<h1>Listing billing_infos</h1>
+
+<table>
+  <tr>
+    <th>Userid</th>
+    <th>Cardtype</th>
+    <th>Ccnumber</th>
+    <th>Ccexpdate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @billing_infos.each do |billing_info| %>
+  <tr>
+    <td><%= billing_info.userid %></td>
+    <td><%= billing_info.cardtype %></td>
+    <td><%= billing_info.ccnumber %></td>
+    <td><%= billing_info.ccexpdate %></td>
+    <td><%= link_to 'Show', billing_info %></td>
+    <td><%= link_to 'Edit', edit_billing_info_path(billing_info) %></td>
+    <td><%= link_to 'Destroy', billing_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Billing info', new_billing_info_path %>

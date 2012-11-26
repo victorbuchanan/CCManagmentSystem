@@ -2,11 +2,13 @@ CCManagmentSystem::Application.routes.draw do
  
   get "static/welcome"
 
-  get "static/about"
+  get "static/success"
 
   get "static/contact_us"
 
   get "static/help"
+
+
 
   resources :user_logs
 

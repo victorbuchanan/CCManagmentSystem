@@ -2,7 +2,7 @@ class StaticController < ApplicationController
   def welcome
   end
 
-  def about
+  def success
   end
 
   def contact_us
@@ -13,4 +13,5 @@ class StaticController < ApplicationController
 
   def first_time_home_buyers
   end
+
 end

@@ -19,24 +19,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <%= link_to image_tag("logo.png"), root_url, :class => "brand" %>
+          <%= link_to image_tag("logo.png"), static_welcome_url, :class => "brand" %>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="divider-vertical"></li>
                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cyber Cafe<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li>Console List</li>
-                  <li>User List</li>
-                  <li>Billing Info</li>
-
+                  <li><a href="#">Console List</a></li>
+                  <li><a href="#">User List</a></li>
+                  <li><a href="#">Billing Info</a></li>
                 </ul>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administrator Options<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li>Manage Account</li>
-                    <li>Manage Users</li>
+                    <li><a href="#">Manage Account</a></li>
+                    <li><a href="#">Manage Users</a></li>
                 </ul>
               </li>
             </ul>
@@ -44,34 +43,6 @@
         </div>
       </div>
     </div>
-
-    <!--<div class="container-fluid">-->
-      <!--<div class="row-fluid">-->
-        <!--<div class="span3">-->
-          <!--<div class="well sidebar-nav">-->
-            <!--<ul class="nav nav-list">-->
-              <!--<li class="nav-header">Sidebar</li>-->
-              <!--<li class="active"><a href="#">Link</a></li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li class="nav-header">Sidebar</li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li class="nav-header">Sidebar</li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li><a href="#">Link</a></li>-->
-              <!--<li><a href="#">Link</a></li>-->
-            <!--</ul>-->
-          <!--</div>&lt;!&ndash;/.well &ndash;&gt;-->
-        <!--</div>&lt;!&ndash;/span&ndash;&gt;-->
-        <!---->
-        <!--<hr>-->
-
         <div class="container main-content">
     			<%= yield %>
     		</div>

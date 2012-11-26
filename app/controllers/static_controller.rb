@@ -8,7 +8,7 @@ class StaticController < ApplicationController
   def contact_us
   end
 
-  def help
+  def signin
   end
 
   def first_time_home_buyers

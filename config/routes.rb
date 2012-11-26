@@ -6,9 +6,13 @@ CCManagmentSystem::Application.routes.draw do
 
   get "static/contact_us"
 
-  get "static/help"
+  get "static/signin"
 
+  get "users/new"
 
+  get "users/index"
+
+  get "billing_infos/index"
 
   resources :user_logs
 

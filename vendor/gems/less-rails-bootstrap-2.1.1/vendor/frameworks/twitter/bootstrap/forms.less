@@ -393,7 +393,7 @@ select:focus:required:invalid {
 }
 
 .help-block {
-  display: block; // account for any element using help-block
+  display: block; // account for any element using signin-block
   margin-bottom: @baseLineHeight / 2;
 }
 
@@ -631,11 +631,11 @@ legend + .control-group {
       *padding-left: @horizontalComponentOffset;
     }
   }
-  // Remove bottom margin on block level help text since that's accounted for on .control-group
+  // Remove bottom margin on block level signin text since that's accounted for on .control-group
   .help-block {
     margin-bottom: 0;
   }
-  // And apply it only to .help-block instances that follow a form control
+  // And apply it only to .signin-block instances that follow a form control
   input,
   select,
   textarea {
